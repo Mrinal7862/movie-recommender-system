@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import joblib
 import pandas as pd
 import requests
 
@@ -54,7 +55,7 @@ API_KEY = "58c93265b79557c40094ca92af0dc8db"
 movies_dict = pickle.load(open('moviesDict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 
-simmilarity = pickle.load(open('simillarity.pkl' , 'rb'))
+simmilarity = joblib.load('simillarity.pkl')
 
 st.title("Movie Recommendation System")
 
