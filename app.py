@@ -60,7 +60,7 @@ simmilarity = joblib.load('simillarity.pkl')
 st.title("Movie Recommendation System")
 
 selected_Movie_Name = st.selectbox(
-    "How would You Like to be Contracted ?",
+    "This is a Machine Learning Project made by Mrinal Devnath :)",
     movies['title'].values
 )
 
